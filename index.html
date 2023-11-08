@@ -7,13 +7,33 @@
   <title>Piedra, papel, tijera</title>
 </head>
 <body>
-  <button class="boton-jugada" data-jugada="piedra">Piedra</button>
-  <button class="boton-jugada" data-jugada="papel">Papel</button>
-  <button class="boton-jugada" data-jugada="tijera">Tijera</button>
-  
+  <div class="titulo">
+    <h1>Piedra, papel o tijeras<br>🗿 ,📜, ✂️</h1>
+  </div>
+
+  <div class="botones">
+
+    <button class="boton-jugada" data-jugada="piedra">Piedra</button>
+    <button class="boton-jugada" data-jugada="papel">Papel</button>
+    <button class="boton-jugada" data-jugada="tijera">Tijera</button>
+
+  </div>
+
   <div id="resultados"></div>
-  <p id="contador-usuario">Tus puntos: 0</p>
-  <p id="contador-ordenador">Puntos de la máquina: 0</p>
+
+  <div class="contador">
+    <h2>Tabla de puntuaciones</h2>
+    <p id="veces-jugadas">Número de partidas: 0</p>
+    <p id="contador-usuario">Tus puntos: 0</p>
+    <p id="contador-ordenador">Puntos de la máquina: 0</p>
+  </div>
+
+  <div id="logro"></div>
+
+  <div id="logroMp3" style="display: none;">
+    <audio controls src="./SuperMarioRPG(1996) Victory!!.mp3"></audio>
+  </div>
+
   <script src="./js/script.js"></script>
 </body>
 </html>
